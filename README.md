@@ -185,8 +185,8 @@
        if cpu_usage > 80 or disk_usage > 80:
            msg = MIMEText(f"⚠️ Server Alert\nCPU Usage: {cpu_usage}%\nDisk Usage: {disk_usage}%", "plain", "utf-8")
            msg['Subject'] = '[Server Alert] High Resource Usage'
-           msg['From'] = '599989086@qq.com'
-           msg['To'] = '2354948791@qq.com'
+           msg['From'] = '599989086@qq.com' # 改成你自己的邮箱
+           msg['To'] = '2354948791@qq.com' # 改成你自己的邮箱
            msg['Message-ID'] = make_msgid()  # 防止邮件重复标识
    
            try:
